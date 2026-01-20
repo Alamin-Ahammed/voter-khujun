@@ -1,0 +1,31 @@
+name: voter_khujun
+description: A voter search application
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker: ^8.0.0
+  syncfusion_flutter_pdf: ^25.1.37
+  drift: ^2.15.0
+  sqlite3_flutter_libs: ^0.5.0
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+  shared_preferences: ^2.2.2
+  flutter_markdown: ^0.6.16
+  bangla_pdf_fixer: ^2.0.0
+  bangla_converter: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  drift_dev: ^2.15.0
+  build_runner: ^2.4.0
+
+flutter:
+  uses-material-design: true
