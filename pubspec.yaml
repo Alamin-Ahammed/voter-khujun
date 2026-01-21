@@ -19,6 +19,7 @@ dependencies:
   flutter_markdown: ^0.6.16
   bangla_pdf_fixer: ^2.0.0
   bangla_converter: ^1.1.0
+  unorm_dart: ^0.3.2
 
 dev_dependencies:
   flutter_test:

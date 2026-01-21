@@ -64,7 +64,7 @@ class _SearchScreenState extends State<SearchScreen> {
     print('Search query: name="${query.name}", father="${query.father}"');
     print('Search fields: mother="${query.mother}", dob="${query.dob}", ward="${query.ward}"');
 
-    // Get voters from database
+    // Get voters from database ছাফা
     final dbResults = await _db.searchAdvanced(
       name: query.name,
       father: query.father,

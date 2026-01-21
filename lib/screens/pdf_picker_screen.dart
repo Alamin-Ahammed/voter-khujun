@@ -3,7 +3,10 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:voter_khujun/services/best_pdf_parsar_1.dart';
+import 'package:voter_khujun/services/enhanced_parser.dart';
 import 'package:voter_khujun/services/simple_pdf_parser.dart';
+import 'package:voter_khujun/services/voter_pdf_parser.dart';
 import '../services/pdf_service.dart';
 import '../data/database.dart';
 import 'search_screen.dart';
@@ -45,11 +48,7 @@ class _PdfPickerScreenState extends State<PdfPickerScreen> {
 
       // Extract voters from PDF
       List<Map<String, dynamic>> voters =
-          await PdfService.extractVotersFromPdf(filePath);
-      if (voters.isEmpty) {
-        print('Original parser failed, trying simple parser...');
-        voters = await SimplePdfParser.parseVoters(filePath);
-      }
+          await SimplePdfParserTest.parseVoters(filePath);
 
       // ADD THIS DEBUGGING
       print('=== DEBUG: Raw voters list ===');

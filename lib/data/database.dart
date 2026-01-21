@@ -50,7 +50,7 @@ class AppDatabase extends _$AppDatabase {
     await into(voters).insert(_toCompanion(voter));
   }
 
-  // Search with basic query
+  // Search with basic query সাহিদা 
   Future<List<Map<String, dynamic>>> searchVoters(String query) async {
     final results = await (select(voters)
           ..where((t) =>
